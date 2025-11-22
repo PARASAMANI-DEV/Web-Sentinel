@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Sentinel | AI Security Gateway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="icon">🛡️</div>
+        <div>
+            <h1>Web-Sentinel <span class="badge">v1.0.4-beta</span></h1>
+            <div class="tagline">AI-Powered Cybersecurity Gateway & Prompt Injection Shield</div>
+        </div>
+    </div>
+
+    <label>TARGET URL (MALWARE SCANNER)</label>
+    <input type="text" id="urlInput" placeholder="https://example.com/article">
+
+    <label>WEB CONTENT (SANDBOXED FOR ANALYSIS)</label>
+    <textarea id="textInput" rows="5" placeholder="Raw scraped text goes here..."></textarea>
+
+    <button onclick="runScan()">INITIALIZE SCAN SEQUENCE</button>
+
+    <div id="loader" class="loading">
+        [System] Loading Embedding Model (all-MiniLM-L6-v2)...<br>
+        [Network] Querying Threat Database...<br>
+        [AI] Calculating Vector Similarity...
+    </div>
+
+    <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
