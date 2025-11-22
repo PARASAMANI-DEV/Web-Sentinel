@@ -1,0 +1,123 @@
+/* HACKATHON DARK THEME */
+body { 
+    background-color: #0d1117; 
+    color: #c9d1d9; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.container { 
+    background-color: #161b22; 
+    padding: 40px; 
+    border-radius: 15px; 
+    border: 1px solid #30363d; 
+    width: 600px; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.7); 
+}
+
+/* HEADER */
+.header { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #30363d; 
+    padding-bottom: 20px; 
+}
+
+.icon { font-size: 40px; margin-right: 15px; }
+h1 { color: #58a6ff; margin: 0; font-size: 28px; }
+.tagline { color: #8b949e; font-size: 14px; margin-top: 5px; }
+
+/* INPUTS */
+label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+    color: #f0f6fc; 
+    font-size: 14px; 
+    letter-spacing: 0.5px; 
+}
+
+input, textarea { 
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 25px; 
+    background-color: #010409; 
+    border: 1px solid #30363d; 
+    color: #fff; 
+    border-radius: 6px; 
+    font-family: 'Courier New', Courier, monospace; 
+    box-sizing: border-box; 
+}
+
+input:focus, textarea:focus { 
+    border-color: #58a6ff; 
+    outline: none; 
+}
+
+/* BUTTON */
+button { 
+    width: 100%; 
+    padding: 15px; 
+    background: linear-gradient(90deg, #238636, #2ea043); 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.2s; 
+    box-shadow: 0 4px 10px rgba(35, 134, 54, 0.4); 
+}
+button:hover { 
+    transform: translateY(-2px); 
+}
+
+/* STATUS RESULTS */
+#status { 
+    margin-top: 25px; 
+    padding: 20px; 
+    display: none; 
+    border-radius: 8px; 
+    animation: fadeIn 0.5s; 
+}
+
+.loading { 
+    text-align: center; 
+    color: #8b949e; 
+    display: none; 
+    margin-top: 20px; 
+    font-family: monospace; 
+}
+
+/* COLORS */
+.safe { 
+    background-color: rgba(46, 160, 67, 0.1); 
+    border: 1px solid #2ea043; 
+    color: #3fb950; 
+}
+
+.danger { 
+    background-color: rgba(218, 54, 51, 0.1); 
+    border: 1px solid #f85149; 
+    color: #ff7b72; 
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+.badge { 
+    background: #30363d; 
+    padding: 2px 8px; 
+    border-radius: 10px; 
+    font-size: 10px; 
+    margin-left: 10px; 
+    vertical-align: middle; 
+    color: #8b949e; 
+}
